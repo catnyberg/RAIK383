@@ -394,6 +394,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201701122210474_InitialCreate.cs" />
+    <Compile Include="Migrations\201701122210474_InitialCreate.Designer.cs">
+      <DependentUpon>201701122210474_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701172211080_PostalAddress.cs" />
+    <Compile Include="Migrations\201701172211080_PostalAddress.Designer.cs">
+      <DependentUpon>201701172211080_PostalAddress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
@@ -421,6 +430,14 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201701122210474_InitialCreate.resx">
+      <DependentUpon>201701122210474_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701172211080_PostalAddress.resx">
+      <DependentUpon>201701172211080_PostalAddress.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
