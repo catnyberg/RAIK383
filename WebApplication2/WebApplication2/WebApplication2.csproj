@@ -201,6 +201,23 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201701172252556_InitialCreate.cs" />
+    <Compile Include="Migrations\201701172252556_InitialCreate.Designer.cs">
+      <DependentUpon>201701172252556_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701172304478_PostalAddress.cs" />
+    <Compile Include="Migrations\201701172304478_PostalAddress.Designer.cs">
+      <DependentUpon>201701172304478_PostalAddress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701190307080_FirstName.cs" />
+    <Compile Include="Migrations\201701190307080_FirstName.Designer.cs">
+      <DependentUpon>201701190307080_FirstName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701190307476_LastName.cs" />
+    <Compile Include="Migrations\201701190307476_LastName.Designer.cs">
+      <DependentUpon>201701190307476_LastName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -278,6 +295,20 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201701172252556_InitialCreate.resx">
+      <DependentUpon>201701172252556_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701172304478_PostalAddress.resx">
+      <DependentUpon>201701172304478_PostalAddress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701190307080_FirstName.resx">
+      <DependentUpon>201701190307080_FirstName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701190307476_LastName.resx">
+      <DependentUpon>201701190307476_LastName.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
